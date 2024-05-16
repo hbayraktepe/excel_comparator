@@ -1,0 +1,126 @@
+/* General widget styles */
+QWidget {
+    background-color: #121212;  /* Set the background to black */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #e0e0e0;  /* Set the text color to light gray */
+}
+
+/* Window title */
+QMainWindow::title {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 5px;
+}
+
+/* Label styles */
+QLabel {
+    padding: 10px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+/* Line edit styles */
+QLineEdit {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1f1f1f;  /* Set the input field background to dark gray */
+    color: #e0e0e0;
+    margin: 5px 0;
+}
+
+QLineEdit:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styles */
+QPushButton {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 5px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+QPushButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+QPushButton:pressed {
+    background-color: #004085;
+    transform: scale(0.95);
+}
+
+/* Scrollbar styles */
+QScrollBar:vertical {
+    width: 12px;
+    background-color: #1f1f1f;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #007bff;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* Frame styles */
+QFrame {
+    background-color: #1f1f1f;  /* Set the frame background to dark gray */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Combobox styles */
+QComboBox {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1f1f1f;  /* Set the dropdown menu background to dark gray */
+    color: #e0e0e0;
+}
+
+QComboBox:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #333;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(down_arrow.png); /* You can add an appropriate icon here */
+}
+
+/* Progress bar styles */
+QProgressBar {
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1f1f1f;  /* Set the progress bar background to dark gray */
+    color: #e0e0e0;
+}
+
+QProgressBar::chunk {
+    background-color: #007bff;
+    border-radius: 5px;
+}
